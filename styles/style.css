@@ -4,7 +4,64 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  box-sizing: border-box;
+}
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 200 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
+}
+#container {
+  background: url('../images/bgtile.png') top repeat-x;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: 0 auto 6px;
+  padding-top: 89px;
+}
+#container .right-content {
+  width: 504px;
+  padding-top: 19px;
+}
+#container .right-content header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#container .right-content main h1 {
+  font-size: 26px;
+}
+#container .right-content main {
+  background: url('../images/frame.png') top center no-repeat;
+  padding: 25px 54px;
+}
+#container .right-content main p {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 13px 0;
+}
+#container .right-content main button {
+  border: 0;
+  padding: 0;
+  margin: 21px 18px 21px 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: 10px;
+}
+footer ul li {
+  margin: 0 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #3a6890;
 }
